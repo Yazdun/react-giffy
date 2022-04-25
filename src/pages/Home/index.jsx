@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Container } from "../../components";
-import MagicGrid from "magic-grid";
 import css from "./styles.module.css";
 
 export const Home = () => {
