@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Container } from "../../components";
-// import "../../axios";
+import MagicGrid from "magic-grid";
 import css from "./styles.module.css";
 
 export const Home = () => {
@@ -25,9 +25,10 @@ export const Home = () => {
     };
     execute();
   }, []);
+
   return (
     <Container>
-      <div className={css.grid}>
+      <div className={css.grid} id="container">
         {data.map((g, i) => {
           const { images } = g;
           return <img src={images.original.url} alt="" />;
