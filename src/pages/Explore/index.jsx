@@ -1,10 +1,9 @@
-import { Container } from '../../components'
-import css from './styles.module.css'
+import { AnimatedLayout } from '../'
 
 export const Explore = () => {
   return (
-    <Container>
+    <AnimatedLayout>
       <h1>Explore</h1>
-    </Container>
+    </AnimatedLayout>
   )
 }

@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom'
-import { Navigation } from '..'
+import { Navigation } from '../../components'
 
-export const Layout = () => {
+export const SharedLayout = () => {
   return (
     <>
       <Navigation />
