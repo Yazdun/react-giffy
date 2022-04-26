@@ -1,11 +1,14 @@
 import './App.css'
 import { BrowserRouter } from 'react-router-dom'
 import { AppRoutes } from './pages'
+import { AppProvider } from './context'
 
 function App() {
   return (
     <BrowserRouter>
-      <AppRoutes />
+      <AppProvider>
+        <AppRoutes />
+      </AppProvider>
     </BrowserRouter>
   )
 }
