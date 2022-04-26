@@ -1,7 +1,7 @@
-import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Layout } from "./components";
-import { Home, Saved } from "./pages";
+import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Layout } from './components'
+import { Explore, Home, Saved } from './pages'
 
 function App() {
   return (
@@ -9,11 +9,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="top" element={<Saved />} />
+          <Route path="saved" element={<Saved />} />
+          <Route path="explore" element={<Explore />} />
         </Route>
       </Routes>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App
