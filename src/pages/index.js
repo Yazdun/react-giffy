@@ -1,5 +1,4 @@
 export { Home } from './Home'
-export { Saved } from './Saved'
 export { Explore } from './Explore'
 export { SharedLayout } from './SharedLayout'
 export { AnimatedLayout } from './AnimatedLayout'

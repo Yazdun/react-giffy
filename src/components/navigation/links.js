@@ -14,8 +14,8 @@ export const Links = [
     url: '/explore',
   },
   {
-    title: 'saved gifs',
-    icon: <FaSave />,
-    url: '/saved',
+    title: 'source code',
+    icon: <FiGithub />,
+    url: '/github',
   },
 ]

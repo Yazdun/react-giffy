@@ -10,7 +10,7 @@ export const Image = ({ src, alt }) => {
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}
       whileInView={{ opacity: 1, scale: 1 }}
-      className={cn(!loaded && css.loading)}
+      className={cn(!loaded && css.loading, css.wrapper)}
     >
       <img
         className={cn(css.img, !loaded && css.hidden)}

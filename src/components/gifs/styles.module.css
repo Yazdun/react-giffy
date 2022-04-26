@@ -17,29 +17,8 @@
   margin-top: 1rem;
 }
 
-.img {
-  max-width: 100%;
-}
-
-.loading {
-  opacity: 0.3;
-  animation: 1s loading infinite;
-}
-
 @media only screen and (min-width: 600px) {
   .container {
     column-count: 4;
-  }
-}
-
-@keyframes loading {
-  0% {
-    opacity: 0.4;
-  }
-  50% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 0.4;
   }
 }

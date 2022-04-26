@@ -7,6 +7,7 @@
   --foreground--2: hsl(31, 9%, 69%);
   --clr--border: hsl(0, 0%, 19%);
   --clr--active: #d11356;
+  --clr--success: #00f7ff;
   --border--radius: 0.5rem;
   --font--primary: 'Ubuntu', sans-serif;
   --max--width: 55rem;
