@@ -30,18 +30,16 @@
   margin-top: 1rem;
 }
 
-.btn {
+.icon {
   position: absolute;
-  right: 0;
-  padding: 1rem;
-  top: 0;
+  right: 1rem;
+  top: 30%;
   z-index: 1;
   background-color: var(--background--2);
-  border-radius: var(--border--radius);
 }
 
 .loading {
-  animation: 0.3s spinner infinite linear;
+  animation: 0.7s spinner infinite linear;
 }
 
 @keyframes spinner {

@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react'
 import useFetch from 'use-http'
 import { GET_SEARCH } from '../../services'
 import { AiOutlineLoading3Quarters } from 'react-icons/ai'
+import cn from 'classnames'
 
 export const Explore = () => {
   const [searchTerm, setSearchTerm] = useState(null)
@@ -40,13 +41,11 @@ export const Explore = () => {
               setSearchTerm(e.target.value)
             }}
           />
-          <button className={css.btn} onClick={execute}>
-            {loading ? (
-              <AiOutlineLoading3Quarters className={css.loading} />
-            ) : (
-              <FiSearch />
-            )}
-          </button>
+          {loading ? (
+            <AiOutlineLoading3Quarters className={cn(css.loading, css.icon)} />
+          ) : (
+            <FiSearch className={css.icon} />
+          )}
         </div>
       </div>
       {gifs && <Gifs gifs={gifs} />}
