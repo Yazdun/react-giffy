@@ -1,0 +1,45 @@
+.container {
+  column-count: 2;
+  column-gap: 0.8rem;
+  row-gap: 1rem;
+  margin: 2rem 0;
+}
+
+.error {
+  width: 100%;
+  max-width: 20rem;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.error h2 {
+  margin-top: 1rem;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.loading {
+  opacity: 0.3;
+  animation: 1s loading infinite;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    column-count: 4;
+  }
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
