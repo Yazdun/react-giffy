@@ -4,7 +4,7 @@ import { GET_TRENDING } from '../../services'
 import css from './styles.module.css'
 
 export const Home = () => {
-  const { data = {} } = useFetch(GET_TRENDING, [])
+  const { data = {}, loading } = useFetch(GET_TRENDING, [])
 
   return (
     <Container>
