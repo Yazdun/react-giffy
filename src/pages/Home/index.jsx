@@ -13,7 +13,7 @@ export const Home = () => {
       try {
         await axios
           .get(
-            "https://api.giphy.com/v1/gifs/trending?api_key=HjvvLv19smnnDbehOuisjLulGQsP3ZWf&limit=25&rating=g"
+            "https://api.giphy.com/v1/gifs/trending?api_key=HjvvLv19smnnDbehOuisjLulGQsP3ZWf&limit=40&rating=g"
           )
           .then((res) => setData(res.data.data))
           .then(() => setLoading(false));
@@ -24,13 +24,16 @@ export const Home = () => {
     };
     execute();
   }, []);
-
   return (
     <Container>
-      <div className={css.grid} id="container">
+      <div className={css.container}>
         {data.map((g, i) => {
           const { images } = g;
-          return <img src={images.original.url} alt="" />;
+          return (
+            <figure>
+              <img src={images.original.url} alt="" />
+            </figure>
+          );
         })}
       </div>
     </Container>
