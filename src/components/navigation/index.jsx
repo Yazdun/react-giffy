@@ -7,7 +7,9 @@ export const Navigation = () => {
   return (
     <div className={css.nav}>
       <Container sx={css.items}>
-        <h3>Giffy</h3>
+        <Link to="/" className={css.logo}>
+          Giffy
+        </Link>
         <ul className={css.links}>
           {Links.map((link, index) => {
             const { title, icon, url } = link

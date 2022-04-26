@@ -3,6 +3,10 @@
   margin-bottom: 2rem;
 }
 
+.logo {
+  font-weight: 600;
+}
+
 .items {
   display: flex;
   align-items: center;

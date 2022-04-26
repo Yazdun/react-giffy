@@ -6,7 +6,7 @@ export const Links = [
   {
     title: 'trending',
     icon: <AiFillFire />,
-    url: '/',
+    url: '/trending',
   },
   {
     title: 'explore',

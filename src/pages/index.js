@@ -1,3 +1,4 @@
+export { Trending } from './Trending'
 export { Home } from './Home'
 export { Explore } from './Explore'
 export { SharedLayout } from './SharedLayout'

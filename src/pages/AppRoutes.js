@@ -1,4 +1,4 @@
-import { Explore, Home, SharedLayout } from './'
+import { Explore, Trending, Home, SharedLayout } from './'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 
@@ -10,6 +10,7 @@ export const AppRoutes = () => {
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
           <Route path="explore" element={<Explore />} />
+          <Route path="trending" element={<Trending />} />
         </Route>
       </Routes>
     </AnimatePresence>
