@@ -21,6 +21,6 @@ export const Links = [
   {
     title: 'source code',
     icon: <FiGithub />,
-    url: '/',
+    url: '/github',
   },
 ]
