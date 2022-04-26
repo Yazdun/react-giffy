@@ -1,6 +1,5 @@
 import css from './styles.module.css'
 import { Image } from '../'
-import cn from 'classnames'
 
 export const Gifs = ({ gifs, errorMessage }) => {
   if (gifs?.length < 1 || !gifs) {
@@ -14,8 +13,12 @@ export const Gifs = ({ gifs, errorMessage }) => {
   return (
     <div className={css.container}>
       {gifs.data?.map((gif, index) => {
-        const { images } = gif
-        return <Image key={index} src={images.original.url} alt="" />
+        const { images, id } = gif
+        return (
+          <button key={id}>
+            <Image src={images.original.url} alt="" />
+          </button>
+        )
       })}
     </div>
   )
