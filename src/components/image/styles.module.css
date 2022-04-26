@@ -1,0 +1,9 @@
+.hidden {
+  opacity: 0;
+}
+
+.loading {
+  background-color: var(--background--2);
+  border-radius: var(--border--radius);
+  animation: 1s loading infinite;
+}
