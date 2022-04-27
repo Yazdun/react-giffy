@@ -5,7 +5,7 @@ export const AnimatedLayout = ({ children }) => {
   return (
     <motion.div
       initial={{
-        x: '-10%',
+        x: '-2%',
         opacity: 0,
       }}
       animate={{
@@ -13,7 +13,7 @@ export const AnimatedLayout = ({ children }) => {
         opacity: 1,
       }}
       exit={{
-        x: '10%',
+        x: '2%',
         opacity: 0,
       }}
       transition={{ duration: 0.3 }}

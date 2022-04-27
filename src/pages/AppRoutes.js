@@ -5,7 +5,7 @@ import { AnimatePresence } from 'framer-motion'
 export const AppRoutes = () => {
   const location = useLocation()
   return (
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence exitBeforeEnter initial={false}>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />

@@ -8,7 +8,7 @@ export const Navigation = () => {
     <div className={css.nav}>
       <Container sx={css.items}>
         <Link to="/" className={css.logo}>
-          Giffy
+          Giphy
         </Link>
         <ul className={css.links}>
           {Links.map((link, index) => {

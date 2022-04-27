@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  max-width: 20rem;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.title {
+  line-height: 3rem;
+  margin-top: 1rem;
+}
+
+.img {
+  width: 100%;
+  max-width: 15rem;
+}
