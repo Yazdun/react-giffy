@@ -14,7 +14,7 @@ export const Gifs = ({ gifs, errorMessage }) => {
     <div className={css.container}>
       {gifs.data?.map(gif => {
         const { images, id } = gif
-        return <Image key={id} src={images.original.url} alt="" />
+        return <Image sx={css.img} key={id} src={images.original.url} alt="" />
       })}
     </div>
   )

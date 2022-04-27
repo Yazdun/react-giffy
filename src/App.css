@@ -4,13 +4,14 @@
   --background--1: hsl(0, 0%, 7%);
   --background--2: hsl(0, 0%, 13%);
   --foreground--1: hsl(0, 0%, 100%);
-  --foreground--2: hsl(31, 9%, 69%);
+  --foreground--2: hsl(31, 9%, 79%);
   --clr--border: hsl(0, 0%, 19%);
   --clr--active: #d11356;
   --clr--success: #00f7ff;
   --border--radius: 0.5rem;
   --font--primary: 'Ubuntu', sans-serif;
   --max--width: 55rem;
+  --gap: 4rem;
 }
 
 html {
@@ -59,6 +60,10 @@ button {
 a {
   all: unset;
   cursor: pointer;
+}
+
+p {
+  line-height: 1.5rem;
 }
 
 @media (prefers-reduced-motion: reduce) {

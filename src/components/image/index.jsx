@@ -3,7 +3,7 @@ import css from './styles.module.css'
 import cn from 'classnames'
 import { motion } from 'framer-motion'
 
-export const Image = ({ src, alt }) => {
+export const Image = ({ src, alt, sx }) => {
   const [loaded, setLoaded] = useState(false)
 
   return (
@@ -13,7 +13,7 @@ export const Image = ({ src, alt }) => {
       className={cn(!loaded && css.loading)}
     >
       <img
-        className={cn(css.img, !loaded && css.hidden)}
+        className={cn(css.img, sx && sx, !loaded && css.hidden)}
         src={src}
         alt={alt}
         onLoad={() => setLoaded(true)}

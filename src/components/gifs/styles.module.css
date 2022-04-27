@@ -17,6 +17,10 @@
   margin-top: 1rem;
 }
 
+.img {
+  margin-bottom: 0.8rem;
+}
+
 @media only screen and (min-width: 600px) {
   .container {
     column-count: 4;
