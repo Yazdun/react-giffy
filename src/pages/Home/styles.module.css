@@ -36,21 +36,70 @@
   margin: var(--gap) 0;
 }
 
-.opensource {
-  margin: var(--gap) 0;
-  background: url('../../assets/dragons.svg');
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  margin: 1rem 0;
+}
+
+.text {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.link {
+  margin: 2rem 0;
   padding: 1rem;
+  border: 2px solid var(--clr--active);
+  color: var(--clr--active);
   border-radius: var(--border--radius);
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.link svg {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
 }
 
 @media only screen and (min-width: 600px) {
-  .text {
-    /* margin-left: 2rem; */
+  .gifs {
+    max-width: 27rem;
   }
 
-  .gifs {
-    grid-template-columns: repeat(4, 1fr);
+  .trending {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .trending .text {
+    margin-right: 2rem;
+  }
+
+  .explore {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .explore .text {
+    margin-left: 2rem;
+  }
+
+  .text {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .link {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    right: 1rem;
+    left: 0;
   }
 }

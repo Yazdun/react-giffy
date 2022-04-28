@@ -1,5 +1,5 @@
 export { default as fire } from './fire.svg'
-export { default as hero } from './hero.svg'
+export { default as search } from './search.svg'
 export { default as bullymaguire } from './bullymaguire.gif'
 export { default as joker } from './joker.gif'
 export { default as pulpfiction } from './pulpfiction.gif'

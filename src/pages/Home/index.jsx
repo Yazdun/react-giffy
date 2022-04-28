@@ -1,7 +1,15 @@
 import { AnimatedLayout } from '../AnimatedLayout'
 import css from './styles.module.css'
-import { dicaprio, joker, pulpfiction, bullymaguire } from '../../assets'
+import {
+  dicaprio,
+  joker,
+  pulpfiction,
+  bullymaguire,
+  search,
+} from '../../assets'
 import { Image } from '../../components'
+import { FiTrendingUp, FiSearch } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 
 export const Home = () => {
   return (
@@ -14,30 +22,38 @@ export const Home = () => {
         </p>
       </div>
       <div className={css.trending}>
-        <h2 className={css.title}>🔥Now Trending</h2>
+        <div className={css.text}>
+          <h2 className={css.title}>🔥Now Trending</h2>
+          <p className={css.info}>
+            Looking for some hot and trending GIFs to use on your new blog post
+            ? Here you can find fresh GIFs which are widely being use by our
+            users !
+          </p>
+          <Link className={css.link} to="/trending">
+            <FiTrendingUp />
+            Checkout Trendings
+          </Link>
+        </div>
         <div className={css.gifs}>
-          <Image sx={css.gif} src={dicaprio} alt="" />
-          <Image sx={css.gif} src={joker} alt="" />
-          <Image sx={css.gif} src={pulpfiction} alt="" />
-          <Image sx={css.gif} src={bullymaguire} alt="" />
+          <Image sx={css.gif} src={dicaprio} />
+          <Image sx={css.gif} src={joker} />
+          <Image sx={css.gif} src={pulpfiction} />
+          <Image sx={css.gif} src={bullymaguire} />
         </div>
       </div>
-      <div className={css.opensource}>
-        <h2>Open Source</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-          laudantium velit rerum, suscipit, autem aut culpa commodi eos aliquid
-          reiciendis labore tempore! Praesentium labore itaque minima delectus
-          consequuntur. Earum eaque ea quos excepturi alias suscipit ex
-          distinctio obcaecati saepe explicabo tempore nobis eos autem
-          consequatur veniam illo perferendis minus tempora quas aspernatur
-          accusamus, vel maiores quam. Non corrupti repudiandae aut reiciendis
-          ex, veritatis placeat? Cumque architecto atque incidunt dolorum
-          deleniti officiis qui excepturi, dicta molestias quidem nobis sit quae
-          porro illo ipsa modi quibusdam quam eum rerum exercitationem placeat
-          voluptatibus. Eaque ipsam at incidunt tempora, neque ut eveniet aut
-          non.
-        </p>
+      <div className={css.explore}>
+        <div className={css.text}>
+          <h2 className={css.title}>🔍 Start Exploring </h2>
+          <p className={css.info}>
+            Are you looking for specific GIF ? You easily find any GIF you want
+            in our massive GIF archive, by using our incredible search engine
+          </p>
+          <Link className={css.link} to="/explore">
+            <FiSearch />
+            Start Exploring
+          </Link>
+        </div>
+        <Image src={search} />
       </div>
     </AnimatedLayout>
   )
