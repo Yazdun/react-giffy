@@ -6,8 +6,8 @@ import { ScrollToTop } from '../components'
 export const AppRoutes = () => {
   const location = useLocation()
   return (
-    <AnimatePresence exitBeforeEnter initial={false}>
-      <ScrollToTop>
+    <ScrollToTop>
+      <AnimatePresence exitBeforeEnter initial={false}>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<SharedLayout />}>
             <Route index element={<Home />} />
@@ -15,7 +15,7 @@ export const AppRoutes = () => {
             <Route path="trending" element={<Trending />} />
           </Route>
         </Routes>
-      </ScrollToTop>
-    </AnimatePresence>
+      </AnimatePresence>
+    </ScrollToTop>
   )
 }
