@@ -1,0 +1,12 @@
+.footer {
+  position: sticky;
+  top: 100%;
+  border-top: 1px solid var(--clr--border);
+  padding: 1.5rem;
+  margin-top: var(--gap);
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}

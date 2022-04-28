@@ -1,4 +1,5 @@
 export { Container } from './container'
 export { Image } from './image'
 export { Gifs } from './gifs'
+export { Footer } from './footer'
 export { Navigation } from './navigation'
